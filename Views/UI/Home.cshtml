@@ -1,0 +1,90 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OTT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #CFECEC;
+        }
+        .logo {
+            display: inline-block;
+            
+            vertical-align: top;
+            width: 50px;
+            height: 48px;
+            margin-right: 20px;
+            margin-top: 2px; /* if you want it vertically middle of the navbar. */
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #2554C7;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #04AA6D;
+                    color: white;
+                }
+
+        .topnav-right {
+            float: right;
+        }
+        .topnav-left{
+            float:left;
+        }
+
+        #bgimage {
+            background-image: url('/Photos/OTTBgimg.png');
+            height:500px;
+            width: 1000px;
+            background-repeat: no-repeat;
+            /*margin: 0;*/
+            /*background-size: cover;*/
+            background-position:center;
+            margin-left:100px;
+            margin-right:10px;
+        }
+        
+    </style>
+</head>
+<body class="body">
+
+    <div class="topnav">
+        <div class="topnav-left">
+            <a href="/UI/Home">OTT</a>
+            <img class="logo" src="~/Photos/OTT1.png" />
+
+        </div>
+        <div class="topnav-right">
+            <a href="/UI/Login">Login</a>
+            <a href="/UI/Registration">Registration</a>
+        </div>
+    </div>
+    <p style="color: #254117; text-align: center; font-size: x-large; font-family: 'Footlight MT';"> Amigos OTT Platform</p>
+    <div id="bgimage">
+    </div>
+</body>
+</html> 

@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Upload";
+}
+
+<h2 style="text-align:center">Upload Movie or a Clip here</h2>
+<h4 style="text-align:center">(Video file should be less than 100MB)</h4>
+<br />
+<br />
+<br />
+
+<div >
+    <div class="row" >
+        <div class="col-md-5" >
+            <form  method="post" enctype="multipart/form-data" asp-controller="OTT" asp-action="Index">
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <p>Upload Video</p>
+                        <input class="form-control" name="videofile" type="file" required/>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="col-md-10">
+                    <p>Category</p>
+                    <select class="form-control" name="video_type" required>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Suspense Thriller">Suspense Thriller</option>
+
+                    </select>
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <br />
+                        <input class="btn btn-success" type="submit" value="Upload" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <p style="color:green;">@ViewBag.message</p>
+        <p style="color:tomato;">@ViewBag.message1</p>
+        <p style="color:tomato;">@ViewBag.err</p>
+
+
+
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+
+    </div>
+</div>
